@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize"> 30sp </dimen>
+    <dimen name="editTextSize">30sp </dimen>
+    <dimen name="buttonText">30sp</dimen>
+    <dimen name="title">35sp</dimen>
+    <dimen name="padding">8dp</dimen>
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginEnd="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        android:text="---Hi! Let's get started---"
+        android:textColor="#000000"
+        android:textSize="@dimen/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginEnd="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        android:text="Name -"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginEnd="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        android:text="Email  -"
+        android:textColor="#000000"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameView"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        style="@style/MyEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        android:hint="Enter your name "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toEndOf="@+id/nameView"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        style="@style/MyEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/padding"
+        android:layout_marginBottom="@dimen/padding"
+        android:hint="Enter your email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/emailView"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <RadioButton
+            android:id="@+id/deliveryCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_marginEnd="@dimen/padding"
+            android:layout_marginBottom="@dimen/padding"
+            android:text="Pick-up "
+            android:textSize="@dimen/textSize"
+             />
+
+        <RadioButton
+            android:id="@+id/pickCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_marginEnd="@dimen/padding"
+            android:layout_marginBottom="@dimen/padding"
+            android:text="Delivery"
+            android:textSize="@dimen/textSize"
+             />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/orderBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttonshape"
+        android:text="Order Now"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/buttonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
