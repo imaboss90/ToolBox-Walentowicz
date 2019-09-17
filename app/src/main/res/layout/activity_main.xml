@@ -30,8 +30,8 @@
 
     <TextView
         android:id="@+id/nameView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
         android:layout_marginStart="@dimen/padding"
         android:layout_marginEnd="@dimen/padding"
         android:layout_marginBottom="@dimen/padding"
@@ -47,8 +47,8 @@
 
     <TextView
         android:id="@+id/emailView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
         android:layout_marginStart="@dimen/padding"
         android:layout_marginTop="@dimen/padding"
         android:layout_marginEnd="@dimen/padding"
@@ -66,38 +66,41 @@
     <EditText
         android:id="@+id/nameEdit"
         style="@style/MyEditTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editWidth"
+        android:layout_height="@dimen/editHeight"
         android:layout_marginStart="@dimen/padding"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/padding"
         android:layout_marginBottom="@dimen/padding"
         android:hint="Enter your name "
+        android:singleLine="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toEndOf="@+id/nameView"
         app:layout_constraintTop_toBottomOf="@+id/titleView"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <EditText
         android:id="@+id/emailEdit"
         style="@style/MyEditTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editWidth"
+        android:layout_height="@dimen/editHeight"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/padding"
         android:layout_marginBottom="@dimen/padding"
         android:hint="Enter your email"
+        android:singleLine="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toEndOf="@+id/emailView"
         app:layout_constraintTop_toBottomOf="@+id/nameEdit"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -120,8 +123,7 @@
             android:layout_marginEnd="@dimen/padding"
             android:layout_marginBottom="@dimen/padding"
             android:text="Pick-up "
-            android:textSize="@dimen/textSize"
-             />
+            android:textSize="@dimen/textSize" />
 
         <RadioButton
             android:id="@+id/pickCheck"
@@ -132,8 +134,7 @@
             android:layout_marginEnd="@dimen/padding"
             android:layout_marginBottom="@dimen/padding"
             android:text="Delivery"
-            android:textSize="@dimen/textSize"
-             />
+            android:textSize="@dimen/textSize" />
 
     </RadioGroup>
 
@@ -156,5 +157,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
