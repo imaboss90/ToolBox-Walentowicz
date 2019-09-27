@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tendies">5.99</string>
+    <string name="parm">11.99</string>
+    <string name="burger">8.99</string>
+    <string name="filet">33.99</string>
+    <string name="potato">3.99</string>
+    <string name="veggies">4.99</string>
+    <string name="fries">2.99</string>
+
+</resources>

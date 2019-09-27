@@ -4,14 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="wrap_content"
+        android:text=" --Choose Your Entrees--"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <CheckBox
+        android:id="@+id/checkBoxT"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="Chicken Tenders  4pcs/5.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <CheckBox
+        android:id="@+id/checkBoxP"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="Chicken Parmesan  11.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <CheckBox
+        android:id="@+id/checkBoxB"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="Cheese Burger  8.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <CheckBox
+        android:id="@+id/checkBoxF"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="Filet Mignon  33.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+
+
+    <TextView
+        android:id="@+id/sides"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="wrap_content"
+        android:text=" --Choose Your Sides--"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPO"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="Baked Potato  3.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <CheckBox
+        android:id="@+id/checkBoxV"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="Steamed Vegetables  4.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFR"
+        android:layout_width="@dimen/foodWidth"
+        android:layout_height="@dimen/foodHeight"
+        android:text="French Fries  2.99"
+        android:textColor="@color/fontColor"
+        android:textSize="@dimen/foodSize"
+        android:onClick="itemClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select the food you'd like to order"
+        android:text=" --Choose A Sauce--"
+        android:textColor="@color/fontColor"
         android:textSize="@dimen/textSize"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/sauce_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <Button
+        android:id="@+id/circleB"
+        android:layout_width="75dp"
+        android:layout_height="66dp"
+        android:background="@drawable/redr"
+        android:text="GO"
+        android:onClick="go"
+        android:textColor="@color/buttonGo"
+        android:textSize="@dimen/buttonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

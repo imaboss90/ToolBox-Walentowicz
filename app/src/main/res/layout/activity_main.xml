@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,7 +16,7 @@
         android:layout_marginEnd="@dimen/padding"
         android:layout_marginBottom="@dimen/padding"
         android:text="---Hi! Let's get started---"
-        android:textColor="#000000"
+        android:textColor="@color/fontColor"
         android:textSize="@dimen/title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +35,7 @@
         android:layout_marginEnd="@dimen/padding"
         android:layout_marginBottom="@dimen/padding"
         android:text="Name -"
-        android:textColor="#000000"
+        android:textColor="@color/fontColor"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +53,7 @@
         android:layout_marginEnd="@dimen/padding"
         android:layout_marginBottom="@dimen/padding"
         android:text="Email  -"
-        android:textColor="#000000"
+        android:textColor="@color/fontColor"
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +73,7 @@
         android:layout_marginBottom="@dimen/padding"
         android:hint="Enter your name "
         android:singleLine="true"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.613"
@@ -122,8 +122,9 @@
             android:layout_marginTop="@dimen/padding"
             android:layout_marginEnd="@dimen/padding"
             android:layout_marginBottom="@dimen/padding"
-            android:text="Pick-up "
-            android:textSize="@dimen/textSize" />
+            android:text="@string/radio1"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/fontColor"/>
 
         <RadioButton
             android:id="@+id/pickCheck"
@@ -133,8 +134,9 @@
             android:layout_marginTop="@dimen/padding"
             android:layout_marginEnd="@dimen/padding"
             android:layout_marginBottom="@dimen/padding"
-            android:text="Delivery"
-            android:textSize="@dimen/textSize" />
+            android:text="@string/radio2"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/fontColor"/>
 
     </RadioGroup>
 
@@ -157,7 +159,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775"
-        android:onClick=""/>
+        android:onClick="order"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
